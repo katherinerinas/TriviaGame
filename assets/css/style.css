@@ -1,17 +1,32 @@
 h1 {
-	color:limegreen;
+	color: #7FFF00;
 	text-align: center;
-	font-style:
+	font-family: backto1982;
 	font-size:100px;
+}
+
+#startbutton{
+	background-color:yellow;
+	color:#9932CC;
+}
+
+.answerchoice{
+	background-color:yellow;
+	color:#9932CC;
+}
+
+h3,p{color:#7FFF00;
 
 }
 
 
-p,h2{
+
+
+h2{
 color:yellow;
-border-style: dashed;
 text-align:center;}
 
-body{background-color:purple;
+body{background-color:#9932CC;
+	background-image:url("assets/images/background.png");
 
 }
