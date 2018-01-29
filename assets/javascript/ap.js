@@ -17,7 +17,7 @@ $(document).ready(function() {
 				console.log(countdownTimer.time);
 
 			if (countdownTimer.time >= 0) {
-				$('.timer').html('<h3>' + countdownTimer.time + ' Do not wig out, but..</h3>');
+				$('.timer').html('<h3>' + countdownTimer.time + " So...don't wig out, but..</h3>");
 			}
 			else {
 				index++;
@@ -203,6 +203,10 @@ function showScore() {
 	$('.timer').empty();
 
 }
+function reBoot(){
+	$('.question').append("<button id=resetbutton>Redeem Yourself!</button>");
+	
+}
 setup();
 $('.answerchoice').on('click', function() {
  console.log($(this));
@@ -247,6 +251,9 @@ if ((answerChosen == 'D') && (questionArray[index].flags[3] == true)) {
  } else {
  	$(".answerchoice").hide();
  	showScore();
+ 	reBoot();
+
+    
  }
 });
 
