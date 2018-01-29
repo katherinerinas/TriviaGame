@@ -5,7 +5,7 @@ $(document).ready(function() {
 		time : 30,
 		reset: function() {
 			this.time = 30;
-			$('.timer').html('<h3>' + this.time + ' seconds remaining</h3>');
+			$(".timer").html("<h3>" +  this.time  +  " so...don't wig out...but...</h3>");
 		},
 		start: function() {
 			counter = setInterval(countdownTimer.count, 1000);	
@@ -15,10 +15,10 @@ $(document).ready(function() {
 		},
 		count: function() {
 				countdownTimer.time--;
-				console.log(countdownTimer.time);
+				
 
 			if (countdownTimer.time >= 0) {
-				$('.timer').html('<h3>' + countdownTimer.time + " So...don't wig out, but..</h3>");
+				$(".timer").html("<h3>"    +   countdownTimer.time  +     "So...don't wig out, but..</h3>");
 			}
 			else {
 				index++;
@@ -88,7 +88,7 @@ var q5 = {
 
 var q6 = {
 	question : 'Which of these shows would not have been found in the 80s?',
-	possibleAnswers : ['A. All That',
+	possibleAnswers : ['A. Welcome Back, Kotter',
 				 'B. The Cosby Show',
 				 'C. The Jeffersons',
 				 'D. The Golden Girls'],
@@ -151,22 +151,16 @@ function setup() {
 }
 
 function loadQuestion(questionSelection) {
-	console.log(questionSelection);
 	countdownTimer.reset();
   $(".question").html("<h3>" + questionArray[questionSelection].question + "</h3>");
   $("#buttonA").text(questionArray[questionSelection].possibleAnswers[0]).show();
   $("#buttonB").text(questionArray[questionSelection].possibleAnswers[1]).show();
   $("#buttonC").text(questionArray[questionSelection].possibleAnswers[2]).show();
   $("#buttonD").text(questionArray[questionSelection].possibleAnswers[3]).show();
-//  getAnswer();  
-//  nextQuestion(index);
+
 }
 
-//function nextQuestion() {
-//	index = index++;
-//	console.log(index);
-//}
-	
+
 
 function getAnswer() {
 
@@ -187,13 +181,13 @@ function getAnswer() {
 function answerCorrect() {
 	correct++;
 	alert("Tubular!");
-	console.log("correct");
+	
 }
 
 function answerWrong() {
 	wrong++;
 	alert("Bummer! Answers : "    +    questionArray[index].flags);
-	console.log("wrong");
+	
 }
 
 function showScore() {
@@ -211,7 +205,7 @@ function reBoot(){
 }
 setup();
 $('.answerchoice').on('click', function() {
- console.log($(this));
+
  if(this.id == 'buttonA') {
  	var answerChosen = 'A';
  } else if(this.id == 'buttonB') {
