@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	$(".answerchoice").hide();
 	var index = 0;
 	var countdownTimer = {
 		time : 30,
@@ -205,6 +206,7 @@ function showScore() {
 }
 function reBoot(){
 	$('.question').append("<button id=resetbutton>Redeem Yourself!</button>");
+	$("#resetbutton").on("click", setup);
 	
 }
 setup();
