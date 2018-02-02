@@ -19,6 +19,8 @@ h3,p{color:#7FFF00;
 
 }
 
+
+
 #resetbutton{
 	background-color:yellow;
 	color:blue;
@@ -26,9 +28,8 @@ h3,p{color:#7FFF00;
 }
 
 
-
 h2{
-color:white;
+color:yellow;
 text-align:center;}
 
 body{background-image:url('../images/background.png');
