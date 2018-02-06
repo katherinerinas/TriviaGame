@@ -186,7 +186,7 @@ function answerCorrect() {
 
 function answerWrong() {
 	wrong++;
-	alert("Bummer! Answers : "    +    questionArray[index].flags);
+	alert("Bummer!");
 	
 }
 
