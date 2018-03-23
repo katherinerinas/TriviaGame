@@ -199,7 +199,7 @@ function showScore() {
 
 }
 function reBoot(){
-	$('.question').append("<button id=resetbutton>Redeem Yourself!</button>");
+	$('.question').append("<button id=resetbutton>Redeem Yourself!</button><br><br>");
 	$("#resetbutton").on("click", setup);
 	
 }
