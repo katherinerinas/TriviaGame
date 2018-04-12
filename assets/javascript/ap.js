@@ -136,6 +136,7 @@ var q10 = {
 	answer : 'B. Michael Jackson'
 }
 
+
 var questionArray = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10];
 
 
@@ -206,35 +207,36 @@ function reBoot(){
 setup();
 $('.answerchoice').on('click', function() {
 
- if(this.id == 'buttonA') {
+  if(this.id == 'buttonA') {
  	var answerChosen = 'A';
- } else if(this.id == 'buttonB') {
+    } else if(this.id == 'buttonB') {
  	answerChosen = 'B';
- } else if (this.id == 'buttonC') {
+    } else if (this.id == 'buttonC') {
  	answerChosen = 'C';
- } else if (this.id == 'buttonD') {
+    } else if (this.id == 'buttonD') {
  	answerChosen = 'D';
  } 
- if ((answerChosen == 'A') && (questionArray[index].flags[0] == true)) {
+    if ((answerChosen == 'A') && (questionArray[index].flags[0] == true)) {
  	answerCorrect();
- } else if (answerChosen == 'A') {
+    } else if (answerChosen == 'A') {
  	answerWrong();
  }
- if ((answerChosen == 'B') && (questionArray[index].flags[1] == true)) {
+    if ((answerChosen == 'B') && (questionArray[index].flags[1] == true)) {
  	answerCorrect();
- } else if (answerChosen == 'B') {
+    } else if (answerChosen == 'B') {
  	answerWrong();
  }
-if ((answerChosen == 'C') && (questionArray[index].flags[2] == true)) {
+    if ((answerChosen == 'C') && (questionArray[index].flags[2] == true)) {
  	answerCorrect();
- } else if (answerChosen == 'C') {
+    }else if(answerChosen == 'C') {
  	answerWrong();
  }
-if ((answerChosen == 'D') && (questionArray[index].flags[3] == true)) {
+
+    if ((answerChosen == 'D') && (questionArray[index].flags[3] == true)) {
  	answerCorrect();
- } else if (answerChosen == 'D') {
+    }else if(answerChosen == 'D') {
  	answerWrong();
- }
+  }
 
  $(".question").text('');
  $("#buttonA").text('');
@@ -242,17 +244,18 @@ if ((answerChosen == 'D') && (questionArray[index].flags[3] == true)) {
  $("#buttonC").text('');
  $("#buttonD").text('');
  index++;
- if (index < questionArray.length) {
+
+
+    if (index < questionArray.length) {
  	loadQuestion(index);
- } else {
+    } else {
  	$(".answerchoice").hide();
  	showScore();
  	reBoot();
 
     
- }
-});
-
+      }
+   });
 });	
 
 
