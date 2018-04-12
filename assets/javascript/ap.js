@@ -5,7 +5,7 @@ $(document).ready(function() {
 		time : 30,
 		reset: function() {
 			this.time = 30;
-			$(".timer").html("<h3>" +  this.time  +  " so...don't wig out...but...</h3>");
+			$(".timer").html("<h3>" +  this.time  +  "    so...don't wig out...but...</h3>");
 		},
 		start: function() {
 			counter = setInterval(countdownTimer.count, 1000);	

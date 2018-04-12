@@ -6,30 +6,31 @@ h1 {
 }
 
 #startbutton{
-	background-color:yellow;
-	color:blue;
+	background-color:#7FFF00;
+	color:white
 }
 
 .answerchoice{
-	background-color:yellow;
-	color:blue;
+	background-color:#7FFF00;;
+	color:white
 }
 
-h3,p{color:#7FFF00;
+h3,p {color:#7FFF00;
+	text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;
 
 }
 
 
 
 #resetbutton{
-	background-color:yellow;
-	color:blue;
+	background-color:#7FFF00;;
+	color: white;
 
 }
 
 
 h2{
-color:yellow;
+color:white;
 text-align:center;}
 
 body{background-image:url('../images/background.png');
