@@ -7,8 +7,9 @@ Technologies/Languages used:
 
 HTML/CSS/Javascript
 
+<a href="https://katherinerinas.github.io/TriviaGame/">GitHub Pages Link</a>
 
 <img src=/assets/images/quiz.png alt="quiz picture">
 
 
-<a href="https://katherinerinas.github.io/TriviaGame/">GitHub Pages Link</a>
+
